@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    min-height: 300vh;
+    background:
+        url('imgs/r.png') top left / 15% 15% repeat,
+        url('imgs/c.png') center / 12% 12% repeat,
+        linear-gradient(180deg, transparent 0%, #000000 100%);
+    background-blend-mode: multiply;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2, p {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    max-width: 800px;
+}
+
+.music-btn {
+    background: #333;
+    color: #00ff00;
+    border: 3px solid #00ff00;
+    padding: 15px 30px;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: inset 0 0 10px #00ff00;
+    text-shadow: none;
+    letter-spacing: 3px;
+    margin: 20px 0;
+}
+
+.music-btn:hover {
+    background: #00ff00;
+    color: #000;
+    animation: glitch 0.3s infinite;
+}
+
+@keyframes glitch {
+    0%, 100% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+}
+</style>
+</head>
+<button class="music-btn" onclick="toggleMusic()">MUSIQUE</button>
+
+
+<audio id="bgmusic" loop preload="auto">
+  <source src="muscs/Bring.mp3" type="audio/mpeg">
+  <source src="muscs/Bring.ogg" type="audio/ogg">
+</audio>
+
+<script>
+function toggleMusic() {
+    var audio = document.getElementById('bgmusic');
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
+</script>
+
+  <source src="muscs/Bring.mp3" type="audio/mpeg">
+  <source src="muscs/Bring.ogg" type="audio/ogg">
+</audio>
+
+<h1>VRÉRITBALE TEST DE LA INTELLIGENCE</h1>
+<p>🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔vv🤔🤔🤔🤔🤔v</p>
+
+<!-- EXERCICE 1 -->
+<p><u><h2>Exrecice 1! :</h2></u></p>
+<p style="color: pink;">le rat est il beauté ?</p>
+<p><em>en fonction de votre réponse vous serait renvoyer vers un e page wikipiéda qui vous corresponde :</em></p>
+<img src="imgs/rat.png" width="400" height="400">
+<p><a href="https://fr.wikipedia.org/wiki/Intelligence" target="_blank"><button><h1>il est beau🥵</button></a>
+<a href="https://fr.wikipedia.org/wiki/Stupidit%C3%A9" target="_blank"><button><h1>il est laideur 🤢</button></a></p>
+
+<!-- EXERCICE 2 COMPLET -->
+<p><h2><u>exercice 2</u></h2></p>
+<p style="color: rgb(170, 18, 255);"><b>Que dite la feemme? (test dintelligence social)</b></p>
+<p><em><h2>la femme la dans la phtoto suivante elle dite quelque chose il faut devinait elle disait quoi</h2></em></p>
+<img src="imgs/chien.png" alt="bitecarotte" width="1300" height="500">
+<p>
+<button onclick="document.getElementById('img2').style.display='block'"><h2>je suis handicapait</h2></button>
+<img id="img2" src="imgs/singe.png" style="display:none;">
+
+<button onclick="document.getElementById('vid1').style.display='block'"><h1>JE SUIS UN CHIENNE!!</h1></button>
+<video id="vid1" src="vids/waf.mp4" controls style="display:none;"></video>
+
+<p>Veulliez maintenant retourner  en haut de la page  pour couper la musique et pouvoir profiter  de la suite</p>
+
+<style>
+@font-face {
+    font-family: 'Mokgech';
+    src: url('fonts/mokgech/Mokgech-Regular.ttf') format('truetype');
+}
+</style>
+
+<h1 style="font-family: 'Mokgech', monospace;">ET MAINTENANT UN PETIT ENTRACTE AVEC LES MORTS JOYEUX</h1>
+
+<p>
+
+<style>
+.music-btn {
+    background: #333;
+    color: #00ff00;
+    border: 3px solid #00ff00;
+    padding: 12px 20px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: inset 0 0 10px #00ff00;
+    text-shadow: none;
+    letter-spacing: 2px;
+    margin: 10px;
+}
+
+.music-btn:hover {
+    background: #00ff00;
+    color: #000;
+    animation: glitch 0.3s infinite;
+}
+
+@keyframes glitch {
+    0%, 100% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+}
+</style>
+
+<!-- AUDIO PRÉ-CHARGÉS (AU DÉBUT de votre body) -->
+<audio id="son1" preload="auto" style="display:none;">
+    <source src="sns/cri1.mp3" type="audio/mpeg">
+</audio>
+<audio id="son2" preload="auto" style="display:none;">
+    <source src="sns/cri2.mp3" type="audio/mpeg">
+</audio>
+<audio id="son3" preload="auto" style="display:none;">
+    <source src="sns/cri3.mp3" type="audio/mpeg">
+</audio>
+<audio id="son4" preload="auto" style="display:none;">
+    <source src="sns/musique1.mp3" type="audio/mpeg">
+</audio>
+
+<!-- VOS 4 DIVS MODIFIÉS -->
+<!-- 1ère : GAUCHE -->
+<div style="text-align: left;">
+    <img src="imgs/cadrefouet.png" style="float: left; margin: 5px;">
+    <button class="music-btn" onclick="playSound('son1')" style="margin: 5px 5px -255px 0;">PITIÉ</button>
+</div>
+
+<!-- 2ème : CENTRE -->
+<div style="text-align: center;">
+    <img src="imgs/cadrependu.png" style="display: block; margin: 5px auto;">
+    <button class="music-btn" onclick="playSound('son2')" style="margin: -255px;">GHHHGHHGH</button>
+</div>
+
+<!-- 3ème : GAUCHE -->
+<div style="text-align: center; margin: 10px 0;">
+    <img src="imgs/m1.png" style="display: block; margin-left: -60px; width: 300px; margin-top: 5px;">
+    <button class="music-btn" onclick="playSound('son3')" style="margin: 0 0 -255px 0;">DANÇ DANÇ</button>
+</div>
+
+<!-- 4ème : DROITE (bouton LA GESTE TRÈS à gauche) -->
+<div style="text-align: center; margin: 10px 0;">
+    <button class="music-btn" onclick="playSound('son4')" style="margin: 0 0 5px -1400px;">LA GESTE</button>
+    <img src="imgs/m2.png" style="display: block; margin-left: 60px; width: 300px; margin-top: 5px;">
+</div>
+
+
+<script>
+function playSound(id) {
+    document.getElementById(id).play();
+}
+</script>
+
+
+
+
+
+</p>
+
+</body>
+</html>
+
